@@ -1,0 +1,16 @@
+# Core Salesforce Development Rules
+
+## Project Context
+This is a Salesforce Apex development project following enterprise best practices.
+
+## Code Standards
+- All Apex classes must have corresponding test classes
+- Test coverage must be >95%
+- Use TestDataFactory for reusable test data
+- Follow naming conventions: TestDataFactory, HelloWorldTest
+
+## Reference Documents
+See memory-bank/ folder for:
+- enterprise-patterns.md
+- integration-patterns.md  
+- project-overview.md

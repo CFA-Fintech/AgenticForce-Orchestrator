@@ -1,0 +1,11 @@
+# Memory Bank Integration
+
+## Documentation References
+When helping with Salesforce development, always reference:
+
+- memory-bank/enterprise-patterns.md for testing patterns
+- memory-bank/integration-patterns.md for integration approaches
+- memory-bank/project-overview.md for project context
+
+## Test Data Patterns
+Always use TestDataFactory.cls for consistent test data creation.
