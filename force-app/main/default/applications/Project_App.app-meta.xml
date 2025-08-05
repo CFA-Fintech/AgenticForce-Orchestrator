@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Project Management App</label>
+    <description>Demo app for Project custom object</description>
+    <isVisible>true</isVisible>
+    <defaultLandingTab>standard-Project__c</defaultLandingTab>
+    <navType>Standard</navType>
+    <tabs>
+        <tab>standard-Project__c</tab>
+        <tab>standard-Home</tab>
+    </tabs>
+</CustomApplication>

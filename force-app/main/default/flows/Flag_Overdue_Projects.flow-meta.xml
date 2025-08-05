@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flag_Overdue_Projects</fullName>
+    <description>Flags projects as 'Completed' if their End Date is in the past.</description>
+    <processType>AutolaunchedFlow</processType>
+    <status>Active</status>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <elements>
+        <elementReference>
+            <name>Update_Project_Status</name>
+            <elementType>Assignment</elementType>
+        </elementReference>
+    </elements>
+    <assignments>
+        <name>Update_Project_Status</name>
+        <assignments>
+            <assignment>
+                <field>Project__c.Status__c</field>
+                <value>"Completed"</value>
+                <operator>equals</operator>
+            </assignment>
+        </assignments>
+    </assignments>
+</Flow>
