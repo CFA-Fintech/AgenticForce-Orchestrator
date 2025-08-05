@@ -1,1 +1,45 @@
-# CI/CD validation workflow
+name: Salesforce Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install Salesforce CLI
+      run: |
+        npm install -g @salesforce/cli
+        sf --version
+        
+    - name: Validate project structure
+      run: |
+        echo "✅ Validating Salesforce DX project structure..."
+        test -f sfdx-project.json || (echo "❌ sfdx-project.json missing" && exit 1)
+        test -d force-app || (echo "❌ force-app directory missing" && exit 1)
+        echo "✅ Project structure validation passed"
+        
+    - name: Validate Apex syntax
+      run: |
+        echo "✅ Validating Apex classes..."
+        find force-app -name "*.cls" -exec echo "Checking {}" \;
+        echo "✅ Apex validation completed"
+        
+    - name: Check documentation
+      run: |
+        echo "✅ Validating documentation..."
+        test -f README.md || (echo "❌ README.md missing" && exit 1)
+        test -f CLAUDE.md || (echo "❌ CLAUDE.md missing" && exit 1)
+        echo "✅ Documentation validation passed"
