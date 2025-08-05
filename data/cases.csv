@@ -1,0 +1,7 @@
+=== SAVE AS: cases.csv ===
+Subject,Status,Priority,Origin,Type
+Login Issues,New,High,Web,Technical
+Feature Request,Working,Medium,Email,Feature Request
+Data Export Problem,Escalated,High,Phone,Technical
+Training Request,Closed,Low,Web,Other
+Integration Questions,Working,Medium,Chat,Technical

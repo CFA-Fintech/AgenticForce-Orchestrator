@@ -1,0 +1,8 @@
+=== SAVE AS: contacts.csv ===
+FirstName,LastName,Email,Phone,Title,Department
+John,Smith,john.smith@acme.com,(555) 111-2222,VP Sales,Sales
+Jane,Johnson,jane.johnson@acme.com,(555) 111-3333,Marketing Director,Marketing
+Bob,Wilson,bob.wilson@globalmedia.com,(555) 222-4444,CTO,Technology
+Alice,Brown,alice.brown@globalmedia.com,(555) 222-5555,HR Manager,Human Resources
+Charlie,Davis,charlie.davis@techinnovations.com,(555) 333-6666,CEO,Executive
+Diana,Miller,diana.miller@techinnovations.com,(555) 333-7777,CFO,Finance
