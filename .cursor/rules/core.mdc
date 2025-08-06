@@ -1,16 +1,52 @@
-# Core Salesforce Development Rules
+---
+description: Core Salesforce development rules for AI assistance
+globs: ["**/*.cls", "**/*.trigger", "**/*.js", "**/*.html"]
+alwaysApply: true
+---
+
+# Core Salesforce Development Rules for AI Assistance
 
 ## Project Context
-This is a Salesforce Apex development project following enterprise best practices.
+This is an enterprise Salesforce development project following modern best practices with AI-native workflows using Claude, Cursor, and comprehensive testing patterns.
 
-## Code Standards
-- All Apex classes must have corresponding test classes
-- Test coverage must be >95%
-- Use TestDataFactory for reusable test data
-- Follow naming conventions: TestDataFactory, HelloWorldTest
+## Essential AI Guidelines
 
-## Reference Documents
-See memory-bank/ folder for:
-- enterprise-patterns.md
-- integration-patterns.md  
-- project-overview.md
+### Always Reference These Files First
+- `memory-bank/enterprise-patterns.md` - Coding standards and patterns
+- `memory-bank/integration-patterns.md` - API and integration guidelines  
+- `memory-bank/project-overview.md` - Business context and objectives
+- `CLAUDE.md` - Comprehensive project context for AI
+
+### Code Generation Standards
+- **Apex Classes**: Must include comprehensive test classes with >85% coverage
+- **Security First**: Always check CRUD/FLS permissions before database operations
+- **Bulkification**: All SOQL/DML operations must handle collections (Lists/Maps)
+- **Error Handling**: Use try-catch blocks with proper logging and rollback
+- **Naming**: Follow Salesforce conventions (PascalCase for classes, camelCase for methods)
+
+### Testing Requirements
+- Use @testSetup for shared test data across test methods
+- Leverage TestDataFactory patterns for consistent, reusable test data
+- Include both positive and negative test scenarios
+- Use Test.startTest()/stopTest() for governor limit isolation
+- Never use SeeAllData=true in production code
+
+### Documentation Standards
+- Include comprehensive method-level documentation
+- Document business logic and complex algorithms
+- Maintain both human-readable (docs/) and AI-specific (memory-bank/) documentation
+- Update relevant documentation when making code changes
+
+### AI Behavior Guidelines
+- **Before Writing Code**: Always explore existing patterns in force-app/
+- **During Planning**: Reference memory-bank/ for established patterns
+- **For Testing**: Use existing TestDataFactory methods and patterns
+- **For Security**: Implement WITH SECURITY_ENFORCED and permission checks
+- **For Performance**: Follow bulkification and governor limit best practices
+
+## Quality Gates
+- All code must compile without errors or warnings
+- Maintain consistent code formatting and style
+- Follow conventional commit message format
+- Ensure all changes pass existing test suites
+- Validate against Salesforce Code Analyzer standards

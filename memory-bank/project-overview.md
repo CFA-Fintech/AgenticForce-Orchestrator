@@ -1,19 +1,43 @@
-# Salesforce Learning Integration Project
+# AgenticForce Orchestrator Project Overview
 
-## Overview
-This project demonstrates enterprise-level Salesforce development patterns including:
-- Apex class development
-- Comprehensive testing strategies
-- Test data management
-- Bulk data handling with CSV
+## Project Mission
+Enterprise Salesforce development template optimized for AI-native workflows, demonstrating modern development practices with comprehensive AI integration.
 
-## Architecture
-- HelloWorld.cls: Main business logic
-- HelloWorldTest.cls: Comprehensive test coverage
-- TestDataFactory.cls: Reusable test data patterns
+## Key Business Objectives
+- Accelerate Salesforce development with AI assistance
+- Demonstrate enterprise-grade coding patterns and security
+- Provide reusable templates for project management functionality
+- Enable seamless team collaboration with AI tools
 
-## Testing Strategy
-- @testSetup for shared test data
-- TestDataFactory for reusable patterns
-- Test.loadData for bulk CSV scenarios
-- No SeeAllData=true (data isolation)
+## Technical Architecture
+- **Platform**: Salesforce Lightning Platform (API v59.0+)
+- **Development Model**: Salesforce DX with source-driven development
+- **AI Integration**: Cursor IDE + Claude + Memory Bank patterns
+- **Testing**: >85% coverage with TestDataFactory patterns
+- **Security**: CRUD/FLS enforcement, WITH SECURITY_ENFORCED queries
+
+## Core Features
+- Custom Project__c object with validation and automation
+- Lightning Web Components for modern UI (projectCard)
+- Comprehensive Apex classes with enterprise patterns
+- Automated testing with @testSetup and TestDataFactory
+- CI/CD integration with GitHub Actions
+
+## Development Standards
+- Follow enterprise naming conventions
+- Implement comprehensive error handling
+- Use bulkification patterns for all operations
+- Maintain comprehensive documentation
+- Leverage AI assistance with proper governance
+
+## Team Workflow
+- Feature branch development with AI assistance
+- Code reviews incorporating AI-generated suggestions
+- Automated testing and deployment validation
+- Continuous integration with quality gates
+
+## Success Metrics
+- Development velocity improvement with AI assistance
+- Code quality maintenance (>85% test coverage)
+- Security compliance (zero critical vulnerabilities)
+- Team adoption of AI-enhanced workflows

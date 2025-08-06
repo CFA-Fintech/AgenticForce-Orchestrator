@@ -1,11 +1,63 @@
-# Memory Bank Integration
+---
+description: Memory Bank implementation for persistent AI project knowledge
+globs: ["**/*"]
+alwaysApply: true
+---
 
-## Documentation References
-When helping with Salesforce development, always reference:
+# Memory Bank System for AgenticForce Orchestrator
 
-- memory-bank/enterprise-patterns.md for testing patterns
-- memory-bank/integration-patterns.md for integration approaches
-- memory-bank/project-overview.md for project context
+## Memory Bank Purpose
+The memory-bank/ directory contains persistent AI knowledge that maintains context across development sessions, enabling consistent AI assistance and adherence to project standards.
 
-## Test Data Patterns
-Always use TestDataFactory.cls for consistent test data creation.
+## Memory Bank Structure
+
+### Core Knowledge Files
+- **enterprise-patterns.md**: Comprehensive Salesforce development patterns, security guidelines, testing standards, and performance optimization techniques
+- **integration-patterns.md**: API integration standards, event-driven architecture, batch processing patterns, and AI integration guidelines
+- **project-overview.md**: Business context, technical architecture, development standards, and success metrics
+
+### Memory Bank Usage Guidelines
+
+#### For AI Assistants
+1. **Always Reference First**: Read all memory-bank/ files before generating code
+2. **Pattern Consistency**: Follow established patterns documented in enterprise-patterns.md
+3. **Security Compliance**: Adhere to security patterns for all database operations
+4. **Testing Standards**: Use TestDataFactory patterns and @testSetup methodology
+5. **Integration Patterns**: Follow documented API and event-driven patterns
+
+#### For Development Teams
+1. **Keep Updated**: Regularly update memory bank files with new patterns and learnings
+2. **Review Changes**: Include memory bank updates in code review process
+3. **Document Decisions**: Add architectural decisions to appropriate memory bank files
+4. **Share Knowledge**: Use memory bank for team knowledge transfer
+
+### AI Behavior Framework
+
+#### Explore Phase
+- Read all memory-bank/ files to understand project context
+- Analyze existing code patterns in force-app/ directory
+- Review current project structure and documentation
+
+#### Plan Phase
+- Reference enterprise-patterns.md for coding standards
+- Consider integration-patterns.md for API design
+- Align with business objectives in project-overview.md
+- Break complex tasks into testable, deployable chunks
+
+#### Execute Phase
+- Generate code following documented patterns
+- Implement comprehensive test coverage using TestDataFactory
+- Include proper error handling and security checks
+- Update relevant documentation and memory bank files
+
+### Quality Assurance
+- All AI-generated code must comply with memory bank standards
+- Changes must maintain consistency with existing patterns
+- Security and performance guidelines must be followed
+- Test coverage requirements must be met (>85%)
+
+### Continuous Improvement
+- Update memory bank files based on lessons learned
+- Refine patterns based on team feedback and project evolution
+- Maintain alignment between memory bank content and actual codebase
+- Regular review and validation of memory bank effectiveness
